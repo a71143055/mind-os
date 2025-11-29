@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>MindOS</title>
+    <link rel="stylesheet" href="/web/style.css">
+</head>
+<body>
+<header>
+    <h1>MindOS</h1>
+    <div id="focus">Focus: <span id="focus-node">home</span></div>
+</header>
+<main>
+    <section class="search">
+        <input type="text" id="search-input" placeholder="키워드 입력..." />
+        <button id="search-btn">검색</button>
+        <ul id="search-results"></ul>
+    </section>
+
+    <section class="actions">
+        <input type="text" id="node-id" placeholder="노드 ID" />
+        <input type="text" id="node-label" placeholder="노드 라벨" />
+        <button id="add-node-btn">노드 추가</button>
+
+        <input type="text" id="edge-src" placeholder="엣지 출발" />
+        <input type="text" id="edge-tgt" placeholder="엣지 도착" />
+        <button id="add-edge-btn">엣지 추가</button>
+    </section>
+
+    <section class="context">
+        <button id="back-btn">뒤로</button>
+        <button id="reset-btn">리셋</button>
+        <div>
+            <h3>추천</h3>
+            <ul id="suggestions"></ul>
+        </div>
+        <div>
+            <h3>타임라인</h3>
+            <ul id="timeline"></ul>
+        </div>
+    </section>
+
+    <section class="agent">
+        <input type="text" id="assoc-input" placeholder="연상 질의(라벨)..." />
+        <button id="assoc-btn">연상</button>
+        <ul id="assoc-results"></ul>
+    </section>
+</main>
+
+<script src="/web/app.js"></script>
+</body>
+</html>
